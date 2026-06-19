@@ -176,8 +176,12 @@ Mở trình duyệt tại:
 
 ### Chạy với Mã Hóa Đầu-Cuối (AES-256-CBC)
 
+> 💡 **Ghi chú**: `dung123` chỉ là khóa ví dụ. Bạn có thể thay bằng bất kỳ chuỗi bí mật nào.  
+> **Tất cả peer phải dùng cùng một khóa** thì mới giải mã được tin nhắn của nhau.
+
 ```bash
-# Tất cả peer phải dùng cùng khóa bí mật
+# Ví dụ chạy với khóa bí mật "dung123"
+# (thay "dung123" bằng khóa tùy chọn — miễn là tất cả peer dùng chung một khóa)
 node peer.js --id peer-a --name Dung --port 5001 --key dung123
 node peer.js --id peer-b --name Hieu --port 5002 --key dung123
 node peer.js --id peer-c --name Viet --port 5003 --key dung123
